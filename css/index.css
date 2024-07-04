@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+:root {
+    /* FONT */
+      --FF: 'Ubuntu', sans-serif;
+      --FL: "Sorts Mill Goudy", serif;
+      --FS: 1.25rem;
+    /* COLOR */
+      --header: hsla(181, 77%, 25%, 1);
+      --bg-alt: hsla(335, 57%, 24%, 1);
+      --bg-sect: rgba(96, 26, 55, 0.452);
+      --shadow-sect: rgba(96, 26, 50, 0.452);
+      --bg-act: rgba(15, 111, 113, 0.452);
+      --bg-project: hsla(234, 74%, 66%, 0.062);
+      --lightColor: hsla(219, 100%, 95%, 1);
+    --subHeading: hsl(0, 5%, 24%);
+    --bg-primary: hsl(60, 100%, 96%);
+    --shadow-prim: hsl(263, 39%, 15%);
+    --accent: hsl(11, 100%, 16%);
+    --paragraph: hsl(0, 5%, 12%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: var(--FS) var(--FF);
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em;
+    background: var(--bg-primary);
+}
+.header_el {
+    display: grid;
+    place-content:center;
+    text-align: center;
+    row-gap: .5em;
+}
+h2 {
+    color: var(--subHeading);
+    line-height: 1.5;
+}
+.logo-text {
+    font: var(--FL);
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
+.linkList {
+    display: flex;
+    gap: .5em;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--accent);
+}
+.siteNavOpt {
+    border-left: solid;
+    padding-left: .125em;
+}
+ul {
+    list-style-type: none;
+    text-align: start;
+}
+p {
+    color: var(--paragraph);
+    line-height: 1.5;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}  
+a:hover, a:focus {
+    filter: brightness(150%);
+}
