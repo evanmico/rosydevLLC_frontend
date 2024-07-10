@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --txt-lg: 0deg 5% 24%;
+        --txt-sm: 0deg 5% 12%;
+        --accent-dark: 11deg 100% 16%;
+        --accent-bright: 353deg 100% 20%;
+        --bg-primary: 60deg 47% 96%;
+        --bg-secondary: 60deg 100% 96%;
+    }
+}
